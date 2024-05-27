@@ -1,16 +1,16 @@
-const { merge } = require("webpack-merge")
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin")
-const TerserPlugin = require("terser-webpack-plugin")
-const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer")
-const commonConfig = require("./webpack.config.common")
+import { merge } from "webpack-merge"
+import CssMinimizerPlugin from "css-minimizer-webpack-plugin"
+import TerserPlugin from "terser-webpack-plugin"
+import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer"
+import commonConfig from "./webpack.config.common"
 
-module.exports = merge(commonConfig, {
+export default merge(commonConfig, {
 	mode: "production",
 	devtool: "source-map",
 	plugins: [
 		new BundleAnalyzerPlugin({
 			analyzerMode: "static",
-			openAnalyzer: false,
+			openAnalyzer: true,
 			reportFilename: "report.html",
 		}),
 	],
