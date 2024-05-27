@@ -1,0 +1,62 @@
+@font-face {
+	font-family: "Roboto";
+	src: url("./fonts/Roboto-Medium.ttf") format("truetype");
+}
+
+img {
+	width: 200px;
+	height: 200px;
+	// background: 50% 50% no-repeat;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	background-image: url("./assets/rainy-bg.jpg");
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: orange;
+	font-size: 42px;
+}
+
+.card_wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 2 rem;
+	gap: 2rem;
+}
+
+.card {
+	position: relative;
+
+	height: 200px;
+	width: 200px;
+
+	border: 1px solid rgb(116, 103, 103);
+	border-radius: 12px;
+	overflow: hidden;
+
+	.card_icon {
+		position: absolute;
+		top: 40%;
+		left: 40%;
+		width: 20%;
+		height: 20%;
+	}
+}
+
+.volume_control_panel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+// .volume_control {
+// 	padding: 0.5rem 1rem;
+// 	background-color: white;
+// 	border-radius: 8px;
+// }
