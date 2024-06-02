@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webpack App</title>
+    <link rel="shoutcut icon" href="icons8-star.png" />
+  </head>
+  <body>
+    <div class="title">Weather sounds</div>
+    <div class="audio_wrapper">
+      <div class="card rain_card">
+        <img src="./cloud-rain.svg" alt="cloud-rain" class="icon" />
+
+        <audio type="audio/mpeg" class="rain_audio">
+          Your browser doesn't support this audio.
+        </audio>
+      </div>
+
+      <div class="card winter_card">
+        <img src="./cloud-snow.svg" alt="cloud-snow" class="icon" />
+        <audio type="audio/mpeg" class="winter_audio">
+          Your browser doesn't support this audio.
+        </audio>
+      </div>
+
+      <div class="card summer_card">
+        <img src="./sun.svg" alt="sun" class="icon" />
+        <audio type="audio/mpeg" class="summer_audio">
+          Your browser doesn't support this audio.
+        </audio>
+      </div>
+    </div>
+
+    <div class="volume_control_panel">
+      <input type="range" class="volume_control" min="0" max="1" step="0.01" value="1" />
+    </div>
+  </body>
+</html>

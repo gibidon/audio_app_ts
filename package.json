@@ -1,12 +1,46 @@
 {
-  "name": "audio_app_ts",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+	"name": "webpack-intro",
+	"version": "1.0.0",
+	"description": "",
+	"private": "true",
+	"scripts": {
+		"start": "npx webpack serve --config webpack.config.dev.ts",
+		"build": "npx webpack --config webpack.config.prod.ts",
+		"build:dev": "npx webpack --config webpack.config.dev.ts",
+		"lint": "npx eslint ./src",
+		"format": "npx eslint ./src --fix"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/node": "^20.12.12",
+		"@types/webpack": "^5.28.5",
+		"@types/webpack-bundle-analyzer": "^4.7.0",
+		"@types/webpack-dev-server": "^4.7.2",
+		"@typescript-eslint/eslint-plugin": "^7.11.0",
+		"@typescript-eslint/parser": "^7.11.0",
+		"copy-webpack-plugin": "^12.0.2",
+		"css-loader": "^7.1.1",
+		"css-minimizer-webpack-plugin": "^7.0.0",
+		"eslint": "^8.57.0",
+		"html-webpack-plugin": "^5.6.0",
+		"mini-css-extract-plugin": "^2.9.0",
+		"postcss": "^8.4.38",
+		"postcss-loader": "^8.1.1",
+		"postcss-preset-env": "^9.5.13",
+		"prettier": "^3.2.5",
+		"sass": "^1.77.1",
+		"sass-loader": "^14.2.1",
+		"style-loader": "^4.0.0",
+		"terser-webpack-plugin": "^5.3.10",
+		"ts-loader": "^9.5.1",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.4.5",
+		"webpack": "^5.91.0",
+		"webpack-bundle-analyzer": "^4.10.2",
+		"webpack-cli": "^5.1.4",
+		"webpack-dev-server": "^5.0.4",
+		"webpack-merge": "^5.10.0"
+	}
 }
